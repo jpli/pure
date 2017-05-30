@@ -1,14 +1,12 @@
 <section class="post">
     <header class="post-header">
-        <a href="{{ SITEURL }}/{{ article.author.url }}" title="See posts by {{ article.author }}">
-            {% if article.author_gravatar %}
-                <img class="avatar" alt="{{ article.author }}" src="{{ article.author_gravatar }}">
-            {% endif %}
-        </a>
-        <h3><a class="post-title" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-            <p class="post-meta">{{ article.summary | striptags }}</p>
-            <p class="post-meta">
-                in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> &middot; {{ article.locale_date }}
-            </p>
+        <h3 class="post-title" title="{{ article.summary | striptags }}"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+        <p>
+            <span class="post-meta">in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
+            &middot;
+            <span class="post-meta">by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></span>
+            &middot;
+            <span class="post-meta">at {{ article.locale_date }}</span>
+        </p>
     </header>
 </section>
