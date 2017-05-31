@@ -95,13 +95,6 @@ pre {
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
-.about-author {
-    display: block;
-    width: 85%;
-    padding: 0 0px;
-    float: right;
-    margin-bottom: 35px;
-}
     hr {
         border: 1px solid #f2f2f0;
         width: 10%;
@@ -318,11 +311,6 @@ td, th {
 
     .article-avatar {
         float: none
-    }
-
-    .about-author {
-        width: 100%;
-        padding: 0 100px;
     }
 
     .cover-body {
