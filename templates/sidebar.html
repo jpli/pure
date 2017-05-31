@@ -10,9 +10,7 @@
                 {% endfor %}
                     <p class="social">
                 {% for title, link in SOCIAL %}
-                        <a href="{{ link }}">
-                            <i class="fa fa-{{ title }} fa-3x"></i>
-                        </a>
+                        <a href="{{ link }}">{{ title }}</a>
                 {% endfor %}
                     <p>
                 </hgroup>
